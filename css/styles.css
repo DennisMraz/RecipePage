@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'RecipeBody';
+    color: hsl(30, 10%, 34%);
+    
+}
+
+
+.image img{
+    max-width: 100%;
+}
+
+.info-header h1{
+    font-family: 'RecipeTitle';
+    color: black;
+    font-weight: 550;
+    margin: 30px 30px 30px 30px;
+    line-height: 35px;
+}
+
+.info-header p{
+    margin: 0px 30px 30px 30px;
+    
+}
+
+.preparation-time{
+    background-color: hsl(330, 100%, 98%);
+    padding:30px;
+    margin: 0px 30px 30px 30px ;
+}
+
+.preparation-time h3{
+
+    color: hsl(332, 51%, 32%);
+    font-weight: 900;
+    margin-bottom:20px ;
+}
+ul{
+    line-height: 32px;
+}
+
+
+li::marker{
+    color: hsl(332, 51%, 32%) ;
+}
+
+
+/* Ingredientes  */
+
+.info-title{
+    font-family: 'RecipeTitle';
+    color: hsl(332, 51%, 32%);
+    margin-bottom:20px ;
+    font-weight: 550;
+}
+
+.ingredients ul{
+    padding-left: 23px;
+}
+
+hr{
+    margin: 0px 30px 30px 30px;
+}
+
+.nutrition, .instructions, .ingredients{
+    margin: 30px 30px 30px 30px;
+}
+
+.instructions ol{
+    line-height: 25px;
+}
+
+.instructions li{
+    margin-bottom: 10px;
+    
+}
+
+.instructions li::marker{
+    font-weight: bold;
+}
+
+.table-nutrition{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.atribute{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.atribute-num{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'RecipeTitle';
+    src: url('../recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RecipeBody';
+    src: url('../recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: normal;
+}
+
+@media (min-width:601px) and (max-width:1440px){
+
+    figure {
+        max-width: 500px;
+        margin: auto;
+        
+    }
+
+    figure img{
+        margin-top: 30px;
+        border-radius:15px;
+    }
+    main{
+        
+        max-width: 601px;
+        background-color: white;
+        margin: auto;
+        margin-top:100px ;
+        margin-bottom:100px ;
+        border-radius: 15px;
+        padding-bottom: 30px;
+    }
+
+    body{
+        background-color: #f3e5d8;
+        max-width: 1440px
+    }
+
+
+}
